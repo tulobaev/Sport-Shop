@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div>
+        <h1>SportShop</h1>
+      </div>
+      <div>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+      </div>
+
+      <div>
+        <button class="header-btn">Sign in</button>
+      </div>
+      <div>
+        <span class="spanText">Количество товаров:</span>
+        <span id="col">0</span>
+        <div>
+          <span class="span-text2">Сумма:</span>
+          <span id="price">0</span>
+        </div>
+
+        <div class="cancellation">
+          <button
+            onclick="
+          canBtn(3000);
+          "
+          >
+            Отмена
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-container">
+      <div class="box">
+        <h1>Воллейбольная форма Errea:</h1>
+        <div>
+          <img src="./imges/Без названия (4).jpeg" alt="" />
+        </div>
+        <div class="sum">
+          <span id="price">3000 kgz</span>
+        </div>
+        <div class="box-btn">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box2">
+        <h1>Воллейбольная форма Asics:</h1>
+        <div>
+          <img src="./imges/Без названия (5).jpeg" alt="" />
+        </div>
+        <div class="sum2">
+          <span id="price">3000 kgz</span>
+        </div>
+        <div class="box2-btn">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box3">
+        <h1>Воллейбольная форма Mikasa:</h1>
+        <div>
+          <img
+            width="230px"
+            src="./imges/hi32gh89bop7isnbe0ny2ogr8xfmlhop.jpg"
+            alt=""
+          />
+        </div>
+        <div class="sum3">
+          <span id="price">3000 kgz</span>
+        </div>
+        <div class="box3-btn">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box4">
+        <h1>Воллейбольная форма Mizuno:</h1>
+        <div>
+          <img
+            width="230px"
+            src="./imges/88724785_w600_h600_88724785.webp"
+            alt=""
+          />
+        </div>
+        <div class="sum4">
+          <span>3000 kgz</span>
+        </div>
+        <div class="box4-btn">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box5">
+        <h1>Воллейбольная форма Mizuno:</h1>
+        <div>
+          <img width="230px" src="./imges/images (2).jpeg" alt="" />
+        </div>
+        <div class="sum5">
+          <span>3000 kgz</span>
+        </div>
+        <div class="box5-btn">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container2">
+      <div class="box-sect2">
+        <h1>Воллейбольная форма Kelme:</h1>
+        <div>
+          <img src="./imges/images (3).jpeg" alt="" />
+        </div>
+
+        <div class="sum-sect2">
+          <span>3000 kgz</span>
+        </div>
+
+        <div class="box-btn-sect2">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box2-sect2">
+        <h1>Воллейбольная форма Mizuno:</h1>
+        <div>
+          <img src="./imges/images (4).jpeg" alt="" />
+        </div>
+
+        <div class="sum2-sect2">
+          <span>3000 kgz</span>
+        </div>
+
+        <div class="box2-btn-sect2">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box3-sect2">
+        <h1>Воллейбольная форма Mikasa:</h1>
+        <div>
+          <img width="300px" src="./imges/1651784_1.jpg" alt="" />
+        </div>
+
+        <div class="sum3-sect2">
+          <span>3000 kgz</span>
+        </div>
+
+        <div class="box3-btn-sect2">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box4-sect2">
+        <h1>Воллейбольная форма Mikasa:</h1>
+        <div>
+          <img
+            width="280px"
+            src="./imges/0q2krb94xr1wdmcgku5c8ogi60k373nr.jpeg"
+            alt=""
+          />
+        </div>
+
+        <div class="sum4-sect2">
+          <span>3000 kgz</span>
+        </div>
+
+        <div class="box4-btn-sect2">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+
+      <div class="box5-sect2">
+        <h1>Воллейбольная форма Logel:</h1>
+        <div>
+          <img
+            width="250px"
+            src="./imges/w8dsqj81pbkxdfpoljpwz2dppvbarppb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="sum5-sect2">
+          <span>3000 kgz</span>
+        </div>
+
+        <div class="box5-btn-sect2">
+          <button onclick="totalPrice(3000)">Добавить в корзину</button>
+        </div>
+
+        <div style="display: flex">
+          <input class="input-text" type="text" placeholder="Comment" />
+          <button class="ok" onclick="addTask()">Ok</button>
+        </div>
+        <div>
+          <ul id="items"></ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
